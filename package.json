@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  },
+  "name": "pf",
+  "version": "1.0.0",
+  "description": "portfolio_v1",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zajanaza/portfolio_vypracovani.git"
+  },
+  "author": "Jana Zadrazilova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zajanaza/portfolio_vypracovani/issues"
+  },
+  "homepage": "https://github.com/zajanaza/portfolio_vypracovani#readme"
+}
