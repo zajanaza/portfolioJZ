@@ -11,6 +11,37 @@
       border-bottom: 1.5px solid;
       border-color: var(--bs-body-color);
     }
+    .myfieldsetborder {
+      border: 1.5px solid;         
+      border-color: var(--bs-body-color);     
+    }
+    .myicon{
+      width:3rem;
+      font-weight:bold;
+      border-bottom: 1px solid;
+      
+    }
+    .mybutton{
+      background-color: var(--bs-body-bg);
+      border: none;
+      color: var(--bs-body-color);  
+          
+    }
+    .mycard{
+      background-color: var(--bs-body-color);
+      color: var(--bs-body-bg);
+      border:none;
+    }
+    .mybutton > code {
+      font-weight: bolder;      
+      color: rgb(219, 33, 33)
+    }
+    .mybutton2{
+      background-color: var(--bs-body-color);
+      border: none;
+      color: var(--bs-body-bg); 
+      font-weight: bold;           
+    }
   </style>
 </head>
 <body>
@@ -47,6 +78,302 @@
       </div>
     </nav>
   </section>
-    
+  <!-- O mně -->
+  <section>
+    <div class="container pt-5 mt-5">
+      <h2 class="fst-italic">O mně</h2>
+      <div class="row">        
+        <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+          <div class="row">
+            <h3>Jana Zadražilová</h3>
+            <p class="fst-italic">Zatím nemám mnoho, co nabídnout, jelikož jsem na začátku kurzu, ale věřím, že se to rychle změní.</p>  
+          </div>          
+          <div class="row text-end mt-5">
+                
+          </div>                     
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="fotky/Snímek obrazovky 2023-07-26 223137.png" class="d-block w-100" alt="...">
+              </div>              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <p class="fst-italic">
+        Na spodku sekce About by mělo být krátké představení, tedy něco, co máte v téže sekci na LinkedIn. Navíc zde můžete převyprávět svoje CV, ale vlastními slovy (tedy např. vzdělání, pracovní zkušenosti…). Navíc tam můžete uvést i možnost zobrazení (případně i stažení) přímo CV (v angličtině se používá i termín Resume).  
+      </p><br /><hr />  
+    </div>
+  </section>
+  <!-- Dovednosti -->
+  <section>
+    <div class="container">
+      <h2 class="fst-italic">Dovednosti</h2>
+      <!-- WWW -->
+      <div class="row pt-3 ms-1 me-1">
+        <fieldset class="col myfieldsetborder mx-auto me-1">
+          <legend class="w-auto float-none h4 text-center"> WWW </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/html5.png"></img>
+              <p>HTML5</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/CSS3.png"></img>
+              <p>CSS3</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/JS.png"></img>
+              <p>JavaScript</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/react.png"></img>
+              <p>React</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/bootstrap.png"></img>
+              <p>Bootstrap</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/php.png"></img>
+              <p>PHP</p>
+            </div>
+          </div>
+        </fieldset>        
+      </div>
+      <!-- programs a testing -->
+      <div class="row pt-3 ms-1 me-1">
+        <fieldset class="col myfieldsetborder  me-3">
+          <legend class="w-auto float-none h4 text-center"> Programming languages </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/Csharp.png"></img>
+              <p>C#</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/python.png"></img>
+              <p>Python</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/Java.png"></img>
+              <p>Java</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/Visual basic .Net.png"></img>
+              <p>VB</p>
+            </div>            
+          </div>          
+        </fieldset>
+        <fieldset class="col myfieldsetborder  ms-3">
+          <legend class="w-auto float-none h4 text-center"> Testing </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/selenium.png"></img>
+              <p>Selenium</p>
+            </div>
+          </div>  
+        </fieldset>        
+      </div>
+      <!-- mobile app a DevOp -->
+      <div class="row pt-3 ms-1 me-1">
+        <fieldset class="col myfieldsetborder  me-3">
+          <legend class="w-auto float-none h4 text-center"> Mobile applications </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/xamarin.png"></img>
+              <p>Xamarin</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/android studio.png"></img>
+              <p>Android studio</p>
+            </div>                
+          </div>          
+        </fieldset>
+        <fieldset class="col myfieldsetborder  ms-3">
+          <legend class="w-auto float-none h4 text-center"> DevOps </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/win server.png"></img>
+              <p>Windows Server</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/linux.png"></img>
+              <p>Lilnux</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/github.png"></img>
+              <p>GitHub</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/docker.png"></img>
+              <p>Docker</p>
+            </div>            
+          </div>  
+        </fieldset>        
+      </div>
+      <!-- Databaze -->
+      <div class="row pt-3 ms-1 me-1">
+        <fieldset class="col myfieldsetborder  me-1">
+          <legend class="w-auto float-none h4 text-center"> Databases </legend>
+          <div class="row">
+            <div class="col text-center">
+              <img class="myicon" src="icons/Oracle.png"></img>
+              <p>Oracle database</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/MS Access.png"></img>
+              <p>MS Access</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/MS-SQL.png"></img>
+              <p>MS-SQL server</p>
+            </div>
+            <div class="col text-center">
+              <img class="myicon" src="icons/PL_SQL.png"></img>
+              <p>PL/SQL</p>
+            </div>                  
+          </div>          
+        </fieldset>            
+      </div><br><hr>
+    </div>  
+  </section> 
+  <!-- Projekty -->
+  <section>
+    <div class="container">
+      <h2 class="fst-italic">Projekty</h2>
+      <div class="row pt-3 ">
+        <div class="col">
+          <div class="card mycard" style="width: 18rem;">
+            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap projekt</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn mybutton">Přejít</a>
+              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+            </div>
+          </div>
+        </div> 
+        <div class="col">
+          <div class="card mycard" style="width: 18rem;">
+            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap projekt</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn mybutton">Přejít</a>
+              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+            </div>
+          </div>
+        </div><div class="col">
+          <div class="card mycard" style="width: 18rem;">
+            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap projekt</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn mybutton">Přejít</a>
+              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+            </div>
+          </div>
+        </div><div class="col">
+          <div class="card mycard" style="width: 18rem;">
+            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bootstrap projekt</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn mybutton">Přejít</a>
+              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+            </div>
+          </div>
+        </div>  
+      </div><br><hr>
+    </div>
+  </section>
+  <!-- Záliby -->
+  <section>
+    <div class="container">
+      <h2>Záliby</h2>
+        <div class="row pt-3">
+          <div class="col">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="fotky/Snímek obrazovky 2023-07-26 223137.png" class="d-block w-100" alt="...">
+                </div>              
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="col">
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="fotky/Snímek obrazovky 2023-07-26 223137.png" class="d-block w-100" alt="...">
+                </div>              
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div><br><hr>
+    </div>
+  </section> 
+  <!-- Kontakt -->  
+  <section>
+    <div class="container">
+      <h2>Kontakt</h2>
+      <div class="mb-3">
+        <label for="jmeno" class="form-label">Jméno a příjmení</label>
+        <input type="email" class="form-control" id="jmeno" placeholder="">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="email@email.com">
+      </div>
+      <div class="mb-3">
+        <label for="predmet" class="form-label">Předmět</label>
+        <input type="email" class="form-control" id="predmet" placeholder="">
+      </div>
+      <div class="mb-3">
+        <label for="zprava" class="form-label">Text</label>
+        <textarea class="form-control" id="zprava" rows="3" placeholder="Tady mi zanechte vzkaz"></textarea>
+      </div>
+      <div class="mb-3">
+        <button class="mybutton2 btn" type="submit">Odeslat</button>
+      </div>
+    </div>
+  </section>   
 </body>
 </html>
