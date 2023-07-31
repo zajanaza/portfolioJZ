@@ -47,6 +47,11 @@
       color: var(--bs-body-bg); 
       font-weight: bold;           
     }
+    .myflex{
+      
+      border: 1px solid red;
+      flex: 4 1 auto;
+    }
     .mydisabled{      
       color:var(--bs-body-bg);
     }
@@ -67,19 +72,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto ms-auto fs-5">
             <li class="nav-item">
-              <a class="nav-link text-body" aria-current="page" href="#o mne">O mně</a>
+              <a class="nav-link text-body" aria-current="page" href="#o mne" onclick="closeNavbar">O mně</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-body" href="#dovednosti">Dovednosti</a>
+              <a class="nav-link text-body" href="#dovednosti" onclick="closeNavbar">Dovednosti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-body" href="#projekty">Projekty</a>
+              <a class="nav-link text-body" href="#projekty" onclick="closeNavbar">Projekty</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-body" href="#zajmy">Zájmy</a>
+              <a class="nav-link text-body" href="#zajmy" onclick="closeNavbar">Zájmy</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-body" href="#kontakt">Kontakt</a>
+              <a class="nav-link text-body" href="#kontakt" onclick="closeNavbar">Kontakt</a>
             </li>            
           </ul>
         </div>
@@ -96,7 +101,7 @@
           <p class="fst-italic text-end">Zatím nemám mnoho, co nabídnout ... jsem na začátku, ale věřím, že se to rychle změní.</p>                             
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="uvodni foto">
+          <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block" width="600px" alt="uvodni foto">
         </div>
       </div>
     </div>
@@ -115,27 +120,27 @@
         <fieldset class="col myfieldsetborder mx-auto me-1">
           <legend class="w-auto float-none h4 text-center"> WWW </legend>
           <div class="row">
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/html5.png"></img>
               <p>HTML5</p>
             </div>
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/CSS3.png"></img>
               <p>CSS3</p>
             </div>
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/JS.png"></img>
               <p>JavaScript</p>
             </div>
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/react.png"></img>
               <p>React</p>
             </div>
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/bootstrap.png"></img>
               <p>Bootstrap</p>
             </div>
-            <div class="col text-center">
+            <div class="col-4 col-md-2 text-center">
               <img class="myicon" src="icons/php.png"></img>
               <p>PHP</p>
             </div>
@@ -144,7 +149,7 @@
       </div>
       <!-- programs a testing -->
       <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col myfieldsetborder  me-3">
+        <fieldset class="col-12 col-lg-6 myfieldsetborder">
           <legend class="w-auto float-none h4 text-center"> Programming languages </legend>
           <div class="row">
             <div class="col text-center">
@@ -165,7 +170,7 @@
             </div>            
           </div>          
         </fieldset>
-        <fieldset class="col myfieldsetborder  ms-3">
+        <fieldset class="col-12 col-lg-6 myfieldsetborder">
           <legend class="w-auto float-none h4 text-center"> Testing </legend>
           <div class="row">
             <div class="col text-center">
@@ -177,7 +182,7 @@
       </div>
       <!-- mobile app a DevOp -->
       <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col myfieldsetborder  me-3">
+        <fieldset class="col-12 col-lg-6 myfieldsetborder">
           <legend class="w-auto float-none h4 text-center"> Mobile applications </legend>
           <div class="row">
             <div class="col text-center">
@@ -190,7 +195,7 @@
             </div>                
           </div>          
         </fieldset>
-        <fieldset class="col myfieldsetborder  ms-3">
+        <fieldset class="col-12 col-lg-6 myfieldsetborder">
           <legend class="w-auto float-none h4 text-center"> DevOps </legend>
           <div class="row">
             <div class="col text-center">
@@ -242,43 +247,43 @@
   <section id="projekty">
     <div class="container">
       <h2 class="fst-italic">Projekty</h2>
-      <div class="row pt-3 ">
-        <div class="col">
+      <div class="row pt-3">
+        <div class="col-xl-3 col-md-6 col-12 py-1">
           <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Bootstrap projekt</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <h5 class="card-title">Bootstrap</h5>
+              <p class="card-text">Samostatný školní projekt s časovým limitem 8 hodin. Webové stránky imaginárního hotelu.</p>
               <a href="#" class="btn mybutton">Přejít</a>
-              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+              <a href="https://github.com/zajanaza/hotel" class="btn  mybutton"><code>{GitHub}</code></a>
             </div>
           </div>
         </div> 
-        <div class="col">
+        <div class="col-xl-3 col-md-6 col-12 py-1">
           <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Bootstrap projekt</h5>
+              <h5 class="card-title">React</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn mybutton">Přejít</a>
               <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
             </div>
           </div>
-        </div><div class="col">
+        </div><div class="col-xl-3 col-md-6 col-12 py-1">
           <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Bootstrap projekt</h5>
+              <h5 class="card-title">Javascript</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn mybutton">Přejít</a>
               <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
             </div>
           </div>
-        </div><div class="col">
+        </div><div class="col-xl-3 col-md-6 col-12 py-1">
           <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top" alt="...">
+            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Bootstrap projekt</h5>
+              <h5 class="card-title">Budoucí projekt</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn mybutton">Přejít</a>
               <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
@@ -376,7 +381,21 @@
       </div><br /><hr />
 
     </div>
-  </section>   
+  </section>
+  <script>
+    function closeNavbar() {
+      // Zavřít navigační menu po kliknutí na odkaz
+      var navCollapse = document.getElementById("navbarNav");
+
+      if (navCollapse.classList.contains("show")) {
+
+        navCollapse.classList.remove("show");
+
+      }
+
+    }
+
+  </script>   
 </body>
 <footer>
   <div class="row px-5">
