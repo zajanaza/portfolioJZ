@@ -47,6 +47,9 @@
       color: var(--bs-body-bg); 
       font-weight: bold;           
     }
+    .mydisabled{      
+      color:var(--bs-body-bg);
+    }
   </style>
 </head>
 <body>
@@ -291,40 +294,40 @@
       <h2>Záliby</h2>
         <div class="row pt-3">
           <div class="col">
-            <div id="carouselExample" class="carousel slide">
+            <div id="prvni" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="...">
+                  <img src="fotky/zajmy/1/P1010094.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="fotky/Snímek obrazovky 2023-07-26 223137.png" class="d-block w-100" alt="...">
+                  <img src="fotky/zajmy/1/P1010151.JPG" class="d-block w-100" alt="...">
                 </div>              
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#prvni" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#prvni" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
           </div>
           <div class="col">
-            <div id="carouselExample" class="carousel slide">
+            <div id="druhy" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-100" alt="...">
+                  <img src="fotky/zajmy/2/IMG_1918.JPG" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                  <img src="fotky/Snímek obrazovky 2023-07-26 223137.png" class="d-block w-100" alt="...">
+                  <img src="fotky/zajmy/2/IMG_3003.JPG" class="d-block w-100" alt="...">
                 </div>              
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <button class="carousel-control-prev" type="button" data-bs-target="#druhy" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <button class="carousel-control-next" type="button" data-bs-target="#druhy" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
@@ -337,26 +340,54 @@
   <section id="kontakt">
     <div class="container">
       <h2>Kontakt</h2>
-      <div class="mb-3">
-        <label for="jmeno" class="form-label">Jméno a příjmení</label>
-        <input type="email" class="form-control" id="jmeno" placeholder="">
-      </div>
-      <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="email@email.com">
-      </div>
-      <div class="mb-3">
-        <label for="predmet" class="form-label">Předmět</label>
-        <input type="email" class="form-control" id="predmet" placeholder="">
-      </div>
-      <div class="mb-3">
-        <label for="zprava" class="form-label">Text</label>
-        <textarea class="form-control" id="zprava" rows="3" placeholder="Tady mi zanechte vzkaz"></textarea>
-      </div>
-      <div class="mb-3">
-        <button class="mybutton2 btn" type="submit">Odeslat</button>
-      </div>
+      <form>
+        <div class="mb-3">
+          <label for="jmeno" class="form-label">Jméno a příjmení</label>
+          <input type="email" class="form-control" id="jmeno" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email*</label>
+          <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="predmet" class="form-label">Předmět</label>
+          <input type="email" class="form-control" id="predmet" placeholder="">
+        </div>
+        <div class="mb-3">
+          <label for="zprava" class="form-label">Text</label>
+          <textarea class="form-control mydisabled" id="zprava" rows="3" disabled>Zatím nepoužívat</textarea>
+        </div>
+        <div class="mb-3">
+          <button class="mybutton2 btn" type="submit">Odeslat</button>
+        </div>
+      </form>  
+      <div class="row">
+        <div class="col">
+          <p class="fst-italic" style="font-size:0.7rem">* povinné pole, prosím vyplňte</p>
+        </div>
+        <div class="col">
+          <a href="https://www.linkedin.com/in/jana-zadra%C5%BEilov%C3%A1-048290b2/">
+            <img src="icons/LinkedIn.png" width="40px" alt="LinkedIn" href="https://www.seznam.cz/">
+          </a> 
+          <a href="https://github.com/zajanaza">
+            <img src="icons/github.png" width="40px" alt="LinkedIn" href="https://www.seznam.cz/">
+          </a>  
+        </div>
+      </div><br /><hr />
+
     </div>
   </section>   
 </body>
+<footer>
+  <div class="row px-5">
+    <div class="col">
+      <p style="font-size:0.7rem">© Jana Zadražilová 2023</p>
+    </div>
+    <div class="col text-end">
+      <img src="icons/html5.png" alt="html" width="20px" />
+      <img src="icons/CSS3.png" alt="css3" width="20px" />
+      <img src="icons/bootstrap.png" alt="bs" width="20px" />
+    </div>
+  </div>
+</footer>
 </html>
