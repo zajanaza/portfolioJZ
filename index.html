@@ -1,412 +1,407 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE-edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
-  <style>
-    .myabout {      
-      display:flex;
-      flex-direction: column;
-      justify-content: space-between;      
-    }
-    .mynavborder{      
-      border-bottom: 1.5px solid;
-      border-color: var(--bs-body-color);
-    }
-    .myfieldsetborder {
-      border: 1.5px solid;         
-      border-color: var(--bs-body-color);     
-    }
-    .myicon{
-      width:3rem;
-      font-weight:bold;
-      border-bottom: 1px solid;
-      
-    }
-    .mybutton{
-      background-color: var(--bs-body-bg);
-      border: none;
-      color: var(--bs-body-color);  
-          
-    }
-    .mycard{
-      background-color: var(--bs-body-color);
-      color: var(--bs-body-bg);
-      border:none;
-    }
-    .mybutton > code {
-      font-weight: bolder;      
-      color: rgb(219, 33, 33)
-    }
-    .mybutton2{
-      background-color: var(--bs-body-color);
-      border: none;
-      color: var(--bs-body-bg); 
-      font-weight: bold;           
-    }
-    .myflex{
-      
-      border: 1px solid red;
-      flex: 4 1 auto;
-    }
-    .mydisabled{      
-      color:var(--bs-body-bg);
-    }
-  </style>
-</head>
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
-  <!-- Menu -->
-  <section>
-    <nav class="navbar navbar-expand-sm bg-body fixed-top mynavborder">
-      <div class="container-fluid">
-        <a class="navbar-brand fs-5 text-body">
-          <img src="fotky/Snímek obrazovky 2023-07-27 083937.png" alt="Logo" width="45" height="45" class="d-inline-block align-text-top"  />          
-        </a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto ms-auto fs-5">
-            <li class="nav-item">
-              <a class="nav-link text-body" aria-current="page" href="#o mne" onclick="closeNavbar">O mně</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body" href="#dovednosti" onclick="closeNavbar">Dovednosti</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body" href="#projekty" onclick="closeNavbar">Projekty</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body" href="#zajmy" onclick="closeNavbar">Zájmy</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-body" href="#kontakt" onclick="closeNavbar">Kontakt</a>
-            </li>            
-          </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Jana Zadrazilova</title>
+    <style>
+      .myabout {      
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;      
+      }
+      .mynavborder{      
+        border-bottom: 1.5px solid;
+        border-color: var(--bs-body-color);
+      }
+      .myfieldsetborder {
+        border: 1.5px solid;         
+        border-color: var(--bs-body-color);     
+      }
+      .myicon{
+        width:3rem;
+        font-weight:bold;
+        border-bottom: 1px solid;
+        
+      }
+      .mybutton{
+        background-color: var(--bs-body-bg);
+        border: none;
+        color: var(--bs-body-color);  
+            
+      }
+      .mycard{
+        background-color: var(--bs-body-color);
+        color: var(--bs-body-bg);
+        border:none;
+      }
+      .mybutton > code {
+        font-weight: bolder;      
+        color: rgb(219, 33, 33)
+      }
+      .mybutton2{
+        background-color: var(--bs-body-color);
+        border: none;
+        color: var(--bs-body-bg); 
+        font-weight: bold;           
+      }    
+      .mydisabled{      
+        color:var(--bs-body-bg);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+    <!-- Menu -->
+    <section>
+      <nav class="navbar navbar-expand-sm bg-body fixed-top mynavborder">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-5 text-body">
+            <img src="fotky/Snímek obrazovky 2023-07-27 083937.png" alt="Logo" width="45" height="45" class="d-inline-block align-text-top"  />          
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto ms-auto fs-5">
+              <li class="nav-item">
+                <a class="nav-link text-body" aria-current="page" href="#o mne" onclick="closeNavbar()">O mně</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body" href="#dovednosti" onclick="closeNavbar()">Dovednosti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body" href="#projekty" onclick="closeNavbar()">Projekty</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body" href="#zajmy" onclick="closeNavbar()">Zájmy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-body" href="#kontakt" onclick="closeNavbar()">Kontakt</a>
+              </li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- O mně -->
+    <section id="o mne">
+      <div class="container pt-5 mt-5">
+        <h2 class="fst-italic">O mně</h2>
+        <div class="row align-items-center">        
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 myabout ">                    
+            <h1>Jana Zadražilová</h1>
+            <p class="fst-italic text-end">Zatím nemám mnoho, co nabídnout ... jsem na začátku, ale věřím, že se to rychle změní.</p>                             
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block w-75"  alt="uvodni foto">
+          </div>
         </div>
       </div>
-    </nav>
-  </section>
-  <!-- O mně -->
-  <section id="o mne">
-    <div class="container pt-5 mt-5">
-      <h2 class="fst-italic">O mně</h2>
-      <div class="row">        
-        <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 myabout ">                    
-          <h1>Jana Zadražilová</h1>
-          <p class="fst-italic text-end">Zatím nemám mnoho, co nabídnout ... jsem na začátku, ale věřím, že se to rychle změní.</p>                             
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2">
-          <img src="fotky/Snímek obrazovky 2023-07-26 221936_jeste_mensi.png" class="d-block" width="600px" alt="uvodni foto">
-        </div>
+      <div class="container mt-5">
+        <p class="fst-italic">
+          Na spodku sekce About by mělo být krátké představení, tedy něco, co máte v téže sekci na LinkedIn. Navíc zde můžete převyprávět svoje CV, ale vlastními slovy (tedy např. vzdělání, pracovní zkušenosti…). Navíc tam můžete uvést i možnost <a target="_blank" href="CV/CV Jana Zadrazilova (2).pdf">zobrazení</a> (případně i stažení) přímo CV (v angličtině se používá i termín Resume).  
+        </p><br /><hr />  
       </div>
-    </div>
-    <div class="container mt-5">
-      <p class="fst-italic">
-        Na spodku sekce About by mělo být krátké představení, tedy něco, co máte v téže sekci na LinkedIn. Navíc zde můžete převyprávět svoje CV, ale vlastními slovy (tedy např. vzdělání, pracovní zkušenosti…). Navíc tam můžete uvést i možnost <a href="CV/CV Jana Zadrazilova (2).pdf">zobrazení</a> (případně i stažení) přímo CV (v angličtině se používá i termín Resume).  
-      </p><br /><hr />  
-    </div>
-  </section>
-  <!-- Dovednosti -->
-  <section id="dovednosti">
-    <div class="container">
-      <h2 class="fst-italic">Dovednosti</h2>
-      <!-- WWW -->
-      <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col myfieldsetborder mx-auto me-1">
-          <legend class="w-auto float-none h4 text-center"> WWW </legend>
-          <div class="row">
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/html5.png"></img>
-              <p>HTML5</p>
-            </div>
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/CSS3.png"></img>
-              <p>CSS3</p>
-            </div>
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/JS.png"></img>
-              <p>JavaScript</p>
-            </div>
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/react.png"></img>
-              <p>React</p>
-            </div>
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/bootstrap.png"></img>
-              <p>Bootstrap</p>
-            </div>
-            <div class="col-4 col-md-2 text-center">
-              <img class="myicon" src="icons/php.png"></img>
-              <p>PHP</p>
-            </div>
-          </div>
-        </fieldset>        
-      </div>
-      <!-- programs a testing -->
-      <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col-12 col-lg-6 myfieldsetborder">
-          <legend class="w-auto float-none h4 text-center"> Programming languages </legend>
-          <div class="row">
-            <div class="col text-center">
-              <img class="myicon" src="icons/Csharp.png"></img>
-              <p>C#</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/python.png"></img>
-              <p>Python</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/Java.png"></img>
-              <p>Java</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/Visual basic .Net.png"></img>
-              <p>VB</p>
-            </div>            
-          </div>          
-        </fieldset>
-        <fieldset class="col-12 col-lg-6 myfieldsetborder">
-          <legend class="w-auto float-none h4 text-center"> Testing </legend>
-          <div class="row">
-            <div class="col text-center">
-              <img class="myicon" src="icons/selenium.png"></img>
-              <p>Selenium</p>
-            </div>
-          </div>  
-        </fieldset>        
-      </div>
-      <!-- mobile app a DevOp -->
-      <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col-12 col-lg-6 myfieldsetborder">
-          <legend class="w-auto float-none h4 text-center"> Mobile applications </legend>
-          <div class="row">
-            <div class="col text-center">
-              <img class="myicon" src="icons/xamarin.png"></img>
-              <p>Xamarin</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/android studio.png"></img>
-              <p>Android studio</p>
-            </div>                
-          </div>          
-        </fieldset>
-        <fieldset class="col-12 col-lg-6 myfieldsetborder">
-          <legend class="w-auto float-none h4 text-center"> DevOps </legend>
-          <div class="row">
-            <div class="col text-center">
-              <img class="myicon" src="icons/win server.png"></img>
-              <p>Windows Server</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/linux.png"></img>
-              <p>Lilnux</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/github.png"></img>
-              <p>GitHub</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/docker.png"></img>
-              <p>Docker</p>
-            </div>            
-          </div>  
-        </fieldset>        
-      </div>
-      <!-- Databaze -->
-      <div class="row pt-3 ms-1 me-1">
-        <fieldset class="col myfieldsetborder  me-1">
-          <legend class="w-auto float-none h4 text-center"> Databases </legend>
-          <div class="row">
-            <div class="col text-center">
-              <img class="myicon" src="icons/Oracle.png"></img>
-              <p>Oracle database</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/MS Access.png"></img>
-              <p>MS Access</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/MS-SQL.png"></img>
-              <p>MS-SQL server</p>
-            </div>
-            <div class="col text-center">
-              <img class="myicon" src="icons/PL_SQL.png"></img>
-              <p>PL/SQL</p>
-            </div>                  
-          </div>          
-        </fieldset>            
-      </div><br><hr>
-    </div>  
-  </section> 
-  <!-- Projekty -->
-  <section id="projekty">
-    <div class="container">
-      <h2 class="fst-italic">Projekty</h2>
-      <div class="row pt-3">
-        <div class="col-xl-3 col-md-6 col-12 py-1">
-          <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bootstrap</h5>
-              <p class="card-text">Samostatný školní projekt s časovým limitem 8 hodin. Webové stránky imaginárního hotelu.</p>
-              <a href="#" class="btn mybutton">Přejít</a>
-              <a href="https://github.com/zajanaza/hotel" class="btn  mybutton"><code>{GitHub}</code></a>
-            </div>
-          </div>
-        </div> 
-        <div class="col-xl-3 col-md-6 col-12 py-1">
-          <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">React</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn mybutton">Přejít</a>
-              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
-            </div>
-          </div>
-        </div><div class="col-xl-3 col-md-6 col-12 py-1">
-          <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Javascript</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn mybutton">Přejít</a>
-              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
-            </div>
-          </div>
-        </div><div class="col-xl-3 col-md-6 col-12 py-1">
-          <div class="card mycard" style="width: 18rem;">
-            <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Budoucí projekt</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn mybutton">Přejít</a>
-              <a href="#" class="btn  mybutton"><code>{GitHub}</code></a>
-            </div>
-          </div>
-        </div>  
-      </div><br><hr>
-    </div>
-  </section>
-  <!-- Zájmy -->
-  <section id="zajmy">
-    <div class="container">
-      <h2>Záliby</h2>
-        <div class="row pt-3">
-          <div class="col">
-            <div id="prvni" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="fotky/zajmy/1/P1010094.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="fotky/zajmy/1/P1010151.JPG" class="d-block w-100" alt="...">
-                </div>              
+    </section>
+    <!-- Dovednosti -->
+    <section id="dovednosti">
+      <div class="container">
+        <h2 class="fst-italic">Dovednosti</h2>
+        <!-- WWW -->
+        <div class="row pt-3 ms-1 me-1">
+          <fieldset class="col myfieldsetborder mx-auto me-1">
+            <legend class="w-auto float-none h4 text-center"> WWW </legend>
+            <div class="row">
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/html5.png"></img>
+                <p>HTML5</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#prvni" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#prvni" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <div id="druhy" class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="fotky/zajmy/2/IMG_1918.JPG" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                  <img src="fotky/zajmy/2/IMG_3003.JPG" class="d-block w-100" alt="...">
-                </div>              
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/CSS3.png"></img>
+                <p>CSS3</p>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#druhy" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#druhy" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/JS.png"></img>
+                <p>JavaScript</p>
+              </div>
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/react.png"></img>
+                <p>React</p>
+              </div>
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/bootstrap.png"></img>
+                <p>Bootstrap</p>
+              </div>
+              <div class="col-4 col-md-2 text-center">
+                <img class="myicon" src="ikony/php.png"></img>
+                <p>PHP</p>
+              </div>
             </div>
-          </div>
+          </fieldset>        
+        </div>
+        <!-- programs a testing -->
+        <div class="row pt-3 ms-1 me-1">
+          <fieldset class="col-12 col-lg-6 myfieldsetborder">
+            <legend class="w-auto float-none h4 text-center"> Programming languages </legend>
+            <div class="row">
+              <div class="col text-center">
+                <img class="myicon" src="ikony/Csharp.png"></img>
+                <p>C#</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/python.png"></img>
+                <p>Python</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/Java.png"></img>
+                <p>Java</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/Visual basic .Net.png"></img>
+                <p>VB</p>
+              </div>            
+            </div>          
+          </fieldset>
+          <fieldset class="col-12 col-lg-6 myfieldsetborder">
+            <legend class="w-auto float-none h4 text-center"> Testing </legend>
+            <div class="row">
+              <div class="col text-center">
+                <img class="myicon" src="ikony/selenium.png"></img>
+                <p>Selenium</p>
+              </div>
+            </div>  
+          </fieldset>        
+        </div>
+        <!-- mobile app a DevOp -->
+        <div class="row pt-3 ms-1 me-1">
+          <fieldset class="col-12 col-lg-6 myfieldsetborder">
+            <legend class="w-auto float-none h4 text-center"> Mobile applications </legend>
+            <div class="row">
+              <div class="col text-center">
+                <img class="myicon" src="ikony/xamarin.png"></img>
+                <p>Xamarin</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/android studio.png"></img>
+                <p>Android studio</p>
+              </div>                
+            </div>          
+          </fieldset>
+          <fieldset class="col-12 col-lg-6 myfieldsetborder">
+            <legend class="w-auto float-none h4 text-center"> DevOps </legend>
+            <div class="row">
+              <div class="col text-center">
+                <img class="myicon" src="ikony/win server.png"></img>
+                <p>Windows Server</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/linux.png"></img>
+                <p>Lilnux</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/github.png"></img>
+                <p>GitHub</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/docker.png"></img>
+                <p>Docker</p>
+              </div>            
+            </div>  
+          </fieldset>        
+        </div>
+        <!-- Databaze -->
+        <div class="row pt-3 ms-1 me-1">
+          <fieldset class="col myfieldsetborder  me-1">
+            <legend class="w-auto float-none h4 text-center"> Databases </legend>
+            <div class="row">
+              <div class="col text-center">
+                <img class="myicon" src="ikony/Oracle.png"></img>
+                <p>Oracle database</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/MS Access.png"></img>
+                <p>MS Access</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/MS-SQL.png"></img>
+                <p>MS-SQL server</p>
+              </div>
+              <div class="col text-center">
+                <img class="myicon" src="ikony/PL_SQL.png"></img>
+                <p>PL/SQL</p>
+              </div>                  
+            </div>          
+          </fieldset>            
         </div><br><hr>
-    </div>
-  </section> 
-  <!-- Kontakt -->  
-  <section id="kontakt">
-    <div class="container">
-      <h2>Kontakt</h2>
-      <form>
-        <div class="mb-3">
-          <label for="jmeno" class="form-label">Jméno a příjmení</label>
-          <input type="email" class="form-control" id="jmeno" placeholder="">
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email*</label>
-          <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
-        </div>
-        <div class="mb-3">
-          <label for="predmet" class="form-label">Předmět</label>
-          <input type="email" class="form-control" id="predmet" placeholder="">
-        </div>
-        <div class="mb-3">
-          <label for="zprava" class="form-label">Text</label>
-          <textarea class="form-control mydisabled" id="zprava" rows="3" disabled>Zatím nepoužívat</textarea>
-        </div>
-        <div class="mb-3">
-          <button class="mybutton2 btn" type="submit">Odeslat</button>
-        </div>
-      </form>  
-      <div class="row">
-        <div class="col">
-          <p class="fst-italic" style="font-size:0.7rem">* povinné pole, prosím vyplňte</p>
-        </div>
-        <div class="col">
-          <a href="https://www.linkedin.com/in/jana-zadra%C5%BEilov%C3%A1-048290b2/">
-            <img src="icons/LinkedIn.png" width="40px" alt="LinkedIn" href="https://www.seznam.cz/">
-          </a> 
-          <a href="https://github.com/zajanaza">
-            <img src="icons/github.png" width="40px" alt="LinkedIn" href="https://www.seznam.cz/">
-          </a>  
-        </div>
-      </div><br /><hr />
+      </div>  
+    </section> 
+    <!-- Projekty -->
+    <section id="projekty">
+      <div class="container">
+        <h2 class="fst-italic">Projekty</h2>
+        <div class="row pt-3">
+          <div class="col-xl-3 col-md-6 col-12 py-1">
+            <div class="card mycard" style="width: 18rem;">
+              <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bootstrap</h5>
+                <p class="card-text">Samostatný školní projekt s časovým limitem 8 hodin. Webové stránky imaginárního hotelu.</p>
+                <a target="_blank" href="#" class="btn mybutton">Přejít</a>
+                <a target="_blank" href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+              </div>
+            </div>
+          </div> 
+          <div class="col-xl-3 col-md-6 col-12 py-1">
+            <div class="card mycard" style="width: 18rem;">
+              <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">React</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a target="_blank" href="React/vykopove_prace/index.html" class="btn mybutton">Přejít</a>
+                <a target="_blank" href="https://github.com/zajanaza/vykopove_prace" class="btn  mybutton"><code>{GitHub}</code></a>
+              </div>
+            </div>
+          </div><div class="col-xl-3 col-md-6 col-12 py-1">
+            <div class="card mycard" style="width: 18rem;">
+              <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Javascript</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a target="_blank" href="JS_projekt/index.html" class="btn mybutton">Přejít</a>
+                <a target="_blank" href="https://github.com/zajanaza/pujcovna_kol_JS" class="btn  mybutton"><code>{GitHub}</code></a>
+              </div>
+            </div>
+          </div><div class="col-xl-3 col-md-6 col-12 py-1">
+            <div class="card mycard" style="width: 18rem;">
+              <img src="fotky/water_world.png" class="card-img-top d-none d-sm-block" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Budoucí projekt</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a target="_blank" href="#" class="btn mybutton">Přejít</a>
+                <a target="_blank" href="#" class="btn  mybutton"><code>{GitHub}</code></a>
+              </div>
+            </div>
+          </div>  
+        </div><br><hr>
+      </div>
+    </section>
+    <!-- Zájmy -->
+    <section id="zajmy">
+      <div class="container">
+        <h2>Záliby</h2>
+          <div class="row pt-3">
+            <div class="col">
+              <div id="prvni" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="fotky/zajmy/1/P1010094.JPG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="fotky/zajmy/1/P1010151.JPG" class="d-block w-100" alt="...">
+                  </div>              
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#prvni" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#prvni" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col">
+              <div id="druhy" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="fotky/zajmy/2/IMG_1918.JPG" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="fotky/zajmy/2/IMG_3003.JPG" class="d-block w-100" alt="...">
+                  </div>              
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#druhy" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#druhy" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div><br><hr>
+      </div>
+    </section> 
+    <!-- Kontakt -->  
+    <section id="kontakt">
+      <div class="container">
+        <h2>Kontakt</h2>
+        <form>
+          <div class="mb-3">
+            <label for="jmeno" class="form-label">Jméno a příjmení</label>
+            <input type="email" class="form-control" id="jmeno" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email*</label>
+            <input type="email" class="form-control" id="email" placeholder="email@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="predmet" class="form-label">Předmět</label>
+            <input type="email" class="form-control" id="predmet" placeholder="">
+          </div>
+          <div class="mb-3">
+            <label for="zprava" class="form-label">Text</label>
+            <textarea class="form-control mydisabled" id="zprava" rows="3" disabled>Zatím nepoužívat</textarea>
+          </div>
+          <div class="mb-3">
+            <button class="mybutton2 btn" type="submit">Odeslat</button>
+          </div>
+        </form>  
+        <div class="row">
+          <div class="col">
+            <p class="fst-italic" style="font-size:0.7rem">* povinné pole, prosím vyplňte</p>
+          </div>
+          <div class="col">
+            <a target="_blank" href="https://www.linkedin.com/in/jana-zadra%C5%BEilov%C3%A1-048290b2/">
+              <img src="ikony/LinkedIn.png" width="40px" alt="LinkedIn">
+            </a> 
+            <a target="_blank" href="https://github.com/zajanaza">
+              <img src="ikony/github.png" width="40px" alt="LinkedIn">
+            </a>  
+          </div>
+        </div><br /><hr />
 
-    </div>
-  </section>
-  <script>
-    function closeNavbar() {
-      // Zavřít navigační menu po kliknutí na odkaz
-      var navCollapse = document.getElementById("navbarNav");
+      </div>
+    </section>
+    <script>
+      function closeNavbar() {
+        // Zavřít navigační menu po kliknutí na odkaz
+        var navCollapse = document.getElementById("navbarNav");
 
-      if (navCollapse.classList.contains("show")) {
+        if (navCollapse.classList.contains("show")) {
 
-        navCollapse.classList.remove("show");
+          navCollapse.classList.remove("show");
+
+        }
 
       }
 
-    }
-
-  </script>   
-</body>
-<footer>
-  <div class="row px-5">
-    <div class="col">
-      <p style="font-size:0.7rem">© Jana Zadražilová 2023</p>
+    </script>   
+  </body>
+  <footer>
+    <div class="row px-5">
+      <div class="col">
+        <p style="font-size:0.7rem">© Jana Zadražilová 2023</p>
+      </div>
+      <div class="col text-end">
+        <img src="ikony/html5.png" alt="html" width="20px" />
+        <img src="ikony/CSS3.png" alt="css3" width="20px" />
+        <img src="ikony/bootstrap.png" alt="bs" width="20px" />
+      </div>
     </div>
-    <div class="col text-end">
-      <img src="icons/html5.png" alt="html" width="20px" />
-      <img src="icons/CSS3.png" alt="css3" width="20px" />
-      <img src="icons/bootstrap.png" alt="bs" width="20px" />
-    </div>
-  </div>
-</footer>
+  </footer>
 </html>
