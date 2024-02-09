@@ -1,0 +1,43 @@
+body {
+  overflow-x: hidden;   
+}
+.myabout {      
+  display:flex;  
+  justify-content: center;          
+} 
+.mynavborder {      
+  border-bottom: 1.5px solid;
+  border-color: var(--bs-body-color);
+  
+}
+.myfieldsetborder {
+  border: 1.5px solid;         
+  border-color: var(--bs-body-color);     
+}
+.myicon {
+  width:3rem;
+  font-weight:bold;
+  border-bottom: 1px solid;  
+}
+
+.mylink {
+  font-weight: bold;
+  color: var(--bs-body-bg);
+  background-color: var(--bs-body-color);
+  text-decoration-line:none;
+  border: solid 1px; 
+  border-radius: 10px 5px;
+  padding: 0 5px
+}
+.mybutton > code {
+  font-weight: bolder;      
+  color: rgb(219, 33, 33)
+}
+.mybutton2 {
+  background-color: var(--bs-body-color);
+  border: none;
+  color: var(--bs-body-bg); 
+  font-weight: bold;           
+}    
+
+
